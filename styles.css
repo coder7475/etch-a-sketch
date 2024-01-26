@@ -1,5 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 div {
     border: 1px solid black;
     width: 16px;
     height: 16px;
+}
+
+#grids {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 300px;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 20px;
 }
