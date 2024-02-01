@@ -23,3 +23,12 @@ div {
 div:hover {
     background-color: rgb(203, 159, 104);
 }
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#change-btn {
+    padding: 5px;
+}
