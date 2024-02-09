@@ -3,7 +3,7 @@ const chgBtn = document.getElementById("change-btn");
 
 chgBtn.addEventListener("click", () => {
   let gridNum = prompt("Enter a Value:", 16);
-  while (typeof(gridNum) !== "number") {
+  while (typeof(gridNum) !== "number" || (gridNum > 100 && gridNum < 1)) {
     gridNum = parseInt(prompt("Enter a Value:", 16));
   }
 
