@@ -2,7 +2,11 @@ const grids = document.getElementById("grids");
 const chgBtn = document.getElementById("change-btn");
 
 chgBtn.addEventListener("click", () => {
-  const gridNum = prompt("Enter a Value:");
+  let gridNum = prompt("Enter a Value:", 16);
+  while (typeof(gridNum) !== "number") {
+    gridNum = parseInt(prompt("Enter a Value:", 16));
+  }
+
   console.log(gridNum);
 })
 
