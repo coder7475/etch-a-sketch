@@ -2,12 +2,14 @@
 const grids = document.getElementById("grids");
 const chgBtn = document.getElementById("change-btn");
 
-
 // functions
 const generateGrids = (gridNums) => {
   for (let i = 0; i < gridNums; i++) {
     for (let j = 0; j < gridNums; j++) {
       let div = document.createElement("div");
+      let val = Math.floor((290 - gridNums) / gridNums);
+      div.style.height = `${val}px`;
+      div.style.width = `${val}px`;
       grids.appendChild(div);
     }
   }
